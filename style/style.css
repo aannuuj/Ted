@@ -1035,10 +1035,13 @@ img {
   }
 }
 .navbar-nav .nav-item a:hover {
-  background: transparent;
-  color: #fff;
+  background: #e62b1e;
+  color: #fff
+  animation: grow 60s linear .5s infinite;
   opacity: 1;
+
 }
+
 
 @media only screen and (max-width: 991px) {
   .navbar-nav .nav-item a::before {
@@ -2396,7 +2399,7 @@ img {
 
 .counter {
   font-family: "Poppins", sans-serif;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   letter-spacing: .2rem;
   line-height: 1.4;
   margin-bottom: 10px;
