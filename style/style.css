@@ -53,6 +53,21 @@ html {
   box-sizing: border-box;
 }
 
+.ct-btn-scroll {
+  width: 49px;
+  height: 49px;
+  position: absolute;
+  bottom: 110px;
+  left: 0px;
+  right: 0;
+  margin: auto;
+  padding-top: 500px;
+  z-index: 9;
+  border-radius: 50%;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+
 body, html {
   font-size: 14px;
   -webkit-text-size-adjust: 100%;

@@ -3,6 +3,15 @@
 
 
 <head>
+	<script type="text/javascript">
+	window.onscroll=()=>{
+  const nav = document.querySelector('#navmenu');
+  if(this.scrollY <= 500)
+   nav.style.backgroundColor = 'transparent';
+   else nav.style.backgroundColor = 'black';
+};
+</script>
+
 	<meta charset="utf-8" />
 	<meta info="Tedx"/>
 	
@@ -37,19 +46,44 @@
 	</div>
 	
     <!-- Header -->
-	<nav class="navbar animated slideInDown">
+	<nav id=navmenu class="navbar navbar-expand-lg animated slideInDown" style="">
         <div class="navbar-left">
             <a href="index.html">
                 <img class="logotype" src="images/tedx-logo.png" alt="Tedxchennai">
 			</a>
         </div>
-		<div id="open-overlay-nav" class="hamburger">
+        <div class="hamburger navbar-toggler" data-toggle="collapse" data-target="#navbarText" role="navigation" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="hamburger__line"></span>
             <span class="hamburger__line"></span>
             <span class="hamburger__line"></span>
 			<span class="hamburger__text">Menu</span>
         </div>
+
+		<div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#hello">About</a></li>
+				<li class="nav-item"><a href="#Gallery">Past Events</a></li>
+				<li class="nav-item"><a href="#speaker">Speakers</a></li>
+				<li class="nav-item"><a href="#tickets">Tickets</a></li>
+				<li class="nav-item"><a href="contact.html">Contact</a></li>
+				<li class="nav-item dropdown">
+					<a class="dropdown-toggle link__last" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+					<ul class="dropdown-menu dropdown-menu--right" aria-labelledby="navbarDropdownMenuLink">
+						<li class="nav-item"><a href="index_onescreen.html">Homepage v2</a></li>
+						<li class="nav-item"><a href="about_onescreen.html">About Onescreen</a></li>
+						<li class="nav-item"><a href="gallery_fully.html">Gallery Fully</a></li>
+						<li class="nav-item"><a href="blog_single_image.html">Blog Single Image</a></li>
+						<li class="nav-item"><a href="blog_single_video.html">Blog Single Video</a></li>
+						<li class="nav-item"><a href="coming_soon.html">Coming Soon</a></li>
+						<li class="nav-item"><a href="page_error.html">Page Error</a></li>
+						<li class="nav-item"><a href="page_error_v2.html">Page Error v2</a></li>
+						<li class="nav-item"><a href="nav_v2.html">Menu v2</a></li>
+					</ul>
+				</li>
+            </ul>
+		</div>
 	</nav>
+
 	<!-- /Header -->
 
     <!-- Hero -->
@@ -62,16 +96,18 @@
 				    <p class="hero__description">
 				    	Imagine a day filled with brilliant speakers, thought-provoking video and mind-blowing conversation. The next revolution won't be one where we bring out the guns, it will be the one where we bring our ideas.
 				    </p>
-                    <a class="btn hero__btn" href="#tickets">Get Your Tickets</a>
-                    <a class="ct-btn-scroll" href="#theme"></a>
-		
+                    <a class="btn hero__btn" href="#tickets">Coming soon</a>
+                     <a class="ct-btn-scroll" href="#theme">
+			<img alt="Arrow Down Icon" src="https://www.solodev.com/assets/anchor/arrow-down.png">
 		</a>
+		
+		
 				</div>
 			</div>
 		</div>
 	
 		<div class="hero__social animated slideInUp">
-				<img alt="Arrow Down Icon" src="https://www.solodev.com/assets/anchor/arrow-down.png">
+			
 		    <a class="link_decoration" target=_load href="https://www.facebook.com/TEDxChennai/">Facebook</a>
 			<a class="link_decoration" target=_blank href="#youtube">YouTube</a>
 			<a class="link_decoration" target=_load href="https://www.instagram.com/tedxchennai/?hl=en">Instagram</a>
@@ -161,18 +197,18 @@
     	<div class="container">
             <div class="row">
 			    <div class="col section__header-wrap">
-				    <h2 class="title__section title__h1 title_horizontal-line"><span class="reveal reveal_gray">Something</span></h2>
+				    <h2 class="title__section title__h1 title_horizontal-line"><span class="reveal reveal_gray">Gallery</span></h2>
 				    <p class="section__subtitle">A photo — is a search for what can get into the frame. When you limit events to a frame — You change these events.</p>
 				</div>
 			</div>
 		</div>
 
-        <div class="container-fluid">
+       <div class="container-fluid">
 			<div class="grid-gallery grid-gallery__base grid-gallery_fully">
 				<!-- Picture -->
 				<figure class="item-portfolio item-portfolio__column-four">
-                    <a class="link-photo" href="img/01_image.jpg" data-width="900" data-height="900" data-caption="<div class='options__photo'><span>MAKE</span>NIKON D700</div><div class='options__photo'><span>SHUTTER SPEED</span>1/2500s</div><div class='options__photo'><span>APERTURE</span>f/1.2</div><div class='options__photo'><span>FOCAL LENGTH</span>25mm</div><div class='options__photo'><span>ISO</span>200</div>">
-						<img class="image-portfolio" src="img/01_image.jpg" alt="Photo">
+                    <a class="link-photo" href="img/gallery1.jpg" data-width="1400" data-height="900" data-caption="<div class='options__photo'><span>MAKE</span>NIKON D700</div><div class='options__photo'><span>SHUTTER SPEED</span>1/2500s</div><div class='options__photo'><span>APERTURE</span>f/1.2</div><div class='options__photo'><span>FOCAL LENGTH</span>25mm</div><div class='options__photo'><span>ISO</span>200</div>">
+						<img class="image-portfolio" src="img/gallery1.jpg" alt="Photo">
 					</a>
 					<ul class="item-details">
 					    <li><a href="#location"><i class="fa fa-location-arrow" aria-hidden="true"></i></a></li>
@@ -182,8 +218,8 @@
 				
 				<!-- Picture -->
 			    <figure class="item-portfolio item-portfolio__column-four">
-					<a class="link-photo" href="img/03_image.jpg" data-width="900" data-height="1800" data-caption="<div class='options__photo'><span>MAKE</span>NIKON D700</div><div class='options__photo'><span>SHUTTER SPEED</span>1/2500s</div><div class='options__photo'><span>APERTURE</span>f/1.2</div><div class='options__photo'><span>FOCAL LENGTH</span>25mm</div><div class='options__photo'><span>ISO</span>200</div>">
-						<img class="image-portfolio" src="img/03_image.jpg" alt="Photo">
+					<a class="link-photo" href="img/gallery21.jpg" data-width="1400" data-height="1800" data-caption="<div class='options__photo'><span>MAKE</span>NIKON D700</div><div class='options__photo'><span>SHUTTER SPEED</span>1/2500s</div><div class='options__photo'><span>APERTURE</span>f/1.2</div><div class='options__photo'><span>FOCAL LENGTH</span>25mm</div><div class='options__photo'><span>ISO</span>200</div>">
+						<img class="image-portfolio" src="img/gallery21.jpg" alt="Photo">
 					</a>
 					<ul class="item-details">
 					    <li><a href="#location"><i class="fa fa-location-arrow" aria-hidden="true"></i></a></li>
@@ -193,8 +229,8 @@
 				
 				<!-- Picture -->
 				<figure class="item-portfolio item-portfolio__column-four">
-					<a class="link-photo" href="img/02_image.jpg" data-width="900" data-height="900" data-caption="<div class='options__photo'><span>MAKE</span>NIKON D700</div><div class='options__photo'><span>SHUTTER SPEED</span>1/2500s</div><div class='options__photo'><span>APERTURE</span>f/1.2</div><div class='options__photo'><span>FOCAL LENGTH</span>25mm</div><div class='options__photo'><span>ISO</span>200</div>">
-						<img class="image-portfolio" src="img/02_image.jpg" alt="Photo">
+					<a class="link-photo" href="img/gallery3.jpg" data-width="1400" data-height="900" data-caption="<div class='options__photo'><span>MAKE</span>NIKON D700</div><div class='options__photo'><span>SHUTTER SPEED</span>1/2500s</div><div class='options__photo'><span>APERTURE</span>f/1.2</div><div class='options__photo'><span>FOCAL LENGTH</span>25mm</div><div class='options__photo'><span>ISO</span>200</div>">
+						<img class="image-portfolio" src="img/gallery3.jpg" alt="Photo">
 					</a>
 					<ul class="item-details">
 					    <li><a href="#location"><i class="fa fa-location-arrow" aria-hidden="true"></i></a></li>
@@ -204,8 +240,8 @@
 				
 				<!-- Picture -->
 				<figure class="item-portfolio item-portfolio__column-four">
-					<a class="link-photo" href="img/04_image.jpg" data-width="900" data-height="1800" data-caption="<div class='options__photo'><span>MAKE</span>NIKON D700</div><div class='options__photo'><span>SHUTTER SPEED</span>1/2500s</div><div class='options__photo'><span>APERTURE</span>f/1.2</div><div class='options__photo'><span>FOCAL LENGTH</span>25mm</div><div class='options__photo'><span>ISO</span>200</div>">
-						<img class="image-portfolio" src="img/04_image.jpg" alt="Photo">
+					<a class="link-photo" href="img/gallery22.jpg" data-width="1400" data-height="1800" data-caption="<div class='options__photo'><span>MAKE</span>NIKON D700</div><div class='options__photo'><span>SHUTTER SPEED</span>1/2500s</div><div class='options__photo'><span>APERTURE</span>f/1.2</div><div class='options__photo'><span>FOCAL LENGTH</span>25mm</div><div class='options__photo'><span>ISO</span>200</div>">
+						<img class="image-portfolio" src="img/gallery22.jpg" alt="Photo">
 					</a>
 					<ul class="item-details">
 					    <li><a href="#location"><i class="fa fa-location-arrow" aria-hidden="true"></i></a></li>
@@ -215,8 +251,8 @@
 
                 <!-- Picture -->
 				<figure class="item-portfolio item-portfolio__column-four">
-					<a class="link-photo" href="img/05_image.jpg" data-width="900" data-height="900" data-caption="<div class='options__photo'><span>MAKE</span>NIKON D700</div><div class='options__photo'><span>SHUTTER SPEED</span>1/2500s</div><div class='options__photo'><span>APERTURE</span>f/1.2</div><div class='options__photo'><span>FOCAL LENGTH</span>25mm</div><div class='options__photo'><span>ISO</span>200</div>">
-						<img class="image-portfolio" src="img/05_image.jpg" alt="Photo">
+					<a class="link-photo" href="img/gallery8.jpg" data-width="1400" data-height="900" data-caption="<div class='options__photo'><span>MAKE</span>NIKON D700</div><div class='options__photo'><span>SHUTTER SPEED</span>1/2500s</div><div class='options__photo'><span>APERTURE</span>f/1.2</div><div class='options__photo'><span>FOCAL LENGTH</span>25mm</div><div class='options__photo'><span>ISO</span>200</div>">
+						<img class="image-portfolio" src="img/gallery8.jpg" alt="Photo">
 					</a>
 					<ul class="item-details">
 					    <li><a href="#location"><i class="fa fa-location-arrow" aria-hidden="true"></i></a></li>
@@ -226,8 +262,8 @@
 				
 				<!-- Picture -->
 				<figure class="item-portfolio item-portfolio__column-four">
-					<a class="link-photo" href="img/06_image.jpg" data-width="900" data-height="900" data-caption="<div class='options__photo'><span>MAKE</span>NIKON D700</div><div class='options__photo'><span>SHUTTER SPEED</span>1/2500s</div><div class='options__photo'><span>APERTURE</span>f/1.2</div><div class='options__photo'><span>FOCAL LENGTH</span>25mm</div><div class='options__photo'><span>ISO</span>200</div>">
-						<img class="image-portfolio" src="img/06_image.jpg" alt="Photo">
+					<a class="link-photo" href="img/gallery6.jpg" data-width="1400" data-height="900" data-caption="<div class='options__photo'><span>MAKE</span>NIKON D700</div><div class='options__photo'><span>SHUTTER SPEED</span>1/2500s</div><div class='options__photo'><span>APERTURE</span>f/1.2</div><div class='options__photo'><span>FOCAL LENGTH</span>25mm</div><div class='options__photo'><span>ISO</span>200</div>">
+						<img class="image-portfolio" src="img/gallery6.jpg" alt="Photo">
 					</a>
 					<ul class="item-details">
 					    <li><a href="#location"><i class="fa fa-location-arrow" aria-hidden="true"></i></a></li>
@@ -237,8 +273,8 @@
 
                 <!-- Picture -->
 				<figure class="item-portfolio item-portfolio__column-four">
-					<a class="link-photo" href="img/14_image.jpg" data-width="600" data-height="800" data-caption="<div class='options__photo'><span>MAKE</span>NIKON D700</div><div class='options__photo'><span>SHUTTER SPEED</span>1/2500s</div><div class='options__photo'><span>APERTURE</span>f/1.2</div><div class='options__photo'><span>FOCAL LENGTH</span>25mm</div><div class='options__photo'><span>ISO</span>200</div>">
-						<img class="image-portfolio" src="img/14_image.jpg" alt="Photo">
+					<a class="link-photo" href="img/gallery26.jpg" data-width="1400" data-height="800" data-caption="<div class='options__photo'><span>MAKE</span>NIKON D700</div><div class='options__photo'><span>SHUTTER SPEED</span>1/2500s</div><div class='options__photo'><span>APERTURE</span>f/1.2</div><div class='options__photo'><span>FOCAL LENGTH</span>25mm</div><div class='options__photo'><span>ISO</span>200</div>">
+						<img class="image-portfolio" src="img/gallery26.jpg" alt="Photo">
 					</a>
 					<ul class="item-details">
 					    <li><a href="#location"><i class="fa fa-location-arrow" aria-hidden="true"></i></a></li>
@@ -248,8 +284,8 @@
 
 				<!-- Picture -->
 				<figure class="item-portfolio item-portfolio__column-four">
-					<a class="link-photo" href="img/19_image.jpg" data-width="900" data-height="1340" data-caption="<div class='options__photo'><span>MAKE</span>NIKON D700</div><div class='options__photo'><span>SHUTTER SPEED</span>1/2500s</div><div class='options__photo'><span>APERTURE</span>f/1.2</div><div class='options__photo'><span>FOCAL LENGTH</span>25mm</div><div class='options__photo'><span>ISO</span>200</div>">
-						<img class="image-portfolio" src="img/19_image.jpg" alt="Photo">
+					<a class="link-photo" href="img/gallery9.jpg" data-width="1400" data-height="1340" data-caption="<div class='options__photo'><span>MAKE</span>NIKON D700</div><div class='options__photo'><span>SHUTTER SPEED</span>1/2500s</div><div class='options__photo'><span>APERTURE</span>f/1.2</div><div class='options__photo'><span>FOCAL LENGTH</span>25mm</div><div class='options__photo'><span>ISO</span>200</div>">
+						<img class="image-portfolio" src="img/gallery9.jpg" alt="Photo">
 					</a>
 					<ul class="item-details">
 					    <li><a href="#location"><i class="fa fa-location-arrow" aria-hidden="true"></i></a></li>
@@ -258,7 +294,7 @@
 				</figure>
             </div>
 			
-			<a href="gallery.html" class="btn-link btn-link_right">explore gallery</a>
+			<a href="gallery.html" target="_load" class="btn-link btn-link_right">explore gallery</a>
 		</div>		
 	</section>
     <!-- /My Works -->
@@ -290,8 +326,9 @@
 	</section>
 	<!-- /Statistics -->
 
-	<!-- Testimonials -->
-	<section class="section  section_top-space-230">
+	
+		<!-- Testimonials -->
+	<!-- <section class="section  section_top-space-230">
     	<div class="container">
             <div class="row">
 			    <div class="col section__header-wrap">
@@ -302,8 +339,8 @@
 		
         <div class="client-carousel swiper-container">
 		    <div class="swiper-wrapper">
-		        <!-- Item -->
-                <div class="swiper-slide client-carousel-item">
+	<	        <!-- Item -->
+     <!--           <div class="swiper-slide client-carousel-item">
 			        <div class="item__block-number">
 				        <span>01.</span>
 				    </div>
@@ -323,7 +360,7 @@
 			    <!-- /Item -->
 			
 			    <!-- Item -->
-                <div class="swiper-slide client-carousel-item">
+      <!--          <div class="swiper-slide client-carousel-item">
 			        <div class="item__block-author">
 			            <div class="item__block-number">
 				            <span>02.</span>
@@ -343,7 +380,7 @@
 			    <!-- /Item -->
 			
 			    <!-- Item -->
-                <div class="swiper-slide client-carousel-item">
+        <!--        <div class="swiper-slide client-carousel-item">
 			        <div class="item__block-number">
 				        <span>03.</span>
 				    </div>
@@ -361,16 +398,17 @@
                     </div>        
 			    </div>
 			    <!-- /Item -->
-            </div>
+    <!--        </div>
 			
 		    <!-- Control -->
-			<div class="swiper-control">
+	<!--		<div class="swiper-control">
 			    <div class="swiper-pagination"></div>
                 <div class="swiper-button-next">NEXT</div>
                 <div class="swiper-button-prev">PREV</div>
 			</div>
 		</div>
 	</section>
+
 	<!-- /Testimonials -->
 <!-- Pricing -->
 <section class="section" id="tickets">
@@ -576,15 +614,14 @@
 			<div class="col-sm-auto col-lg-5">
 				<div class="block-image">
 					<span class="block-image__number" data-top-bottom="transform:translate3d(0,50px,0)" data-bottom-top="transform:translate3d(0,0px,0)">01.</span>
-					<div class="reveal"><img src="img/image_history_01.jpg" alt="2015 Year"></div>
+					<div class="reveal"><img src="img/2017.jpg" alt="2015 Year"></div>
 				</div>
 			</div>
 			<div class="col-12 col-lg-7">
 				<div class="col-about__describe col-about__describe_right">
 					<h6 class="title__h6 title__overhead">2016 year</h6>
-					<h2 class="title title__h2 title__section title_normal">Theme title or something</h2>
-					<p class="block-description">The world of design is ruled by diversity, and it's good. Another question is whether to consider a lot of pieces of furniture as trash. That's it is this responsibility — to create things, not junk, — lies on the designer and the company-manufacturer. Bad architecture is even more harmful.
-					If you make an ugly, uncomfortable and expensive chair, then it will be forgotten very quickly, but if you build a terrible building — it will stay for twenty years and make many unhappy.</p>
+					<h2 class="title title__h2 title__section title_normal">Erasing The Box </h2>
+					<p class="block-description">The goal of TEDxChennai is to promote free thought. Through the ideas that are shared on stage we aim to facilitate a conversation between thinkers, doers and changemakers. The idea is that these very conversations impact new thinking. It isn't about thinking outside the box anymore. It's about erasing that very box and venturing out to explore new thoughts -an excursion for the mind of sorts. It's about shoving that box aside and starting fresh on that slate. Light travels faster than sound. Similarly, ideas travel faster when boundaries are eliminated. No box should be able to limit your ideas. Let your imagination take flight. Erase the box. Embrace the possibilities.</p>
 					<P><a class="btn hero__btn" href="#">Know more</a></P></div>
 			</div>
 		</div>
@@ -595,14 +632,14 @@
 			<div class="col-12 col-lg-7 order-2 order-lg-1">
 				<div class="col-about__describe col-about__describe_left">
 					<h6 class="title__h6 title__overhead">2018 year</h6>
-					<h2 class="title title__h2 title__section title_normal">Opening of the office.</h2>
-					<p class="block-description">More than the design process itself, I am interested in inventions, engineering and marketing ... I think that a good designer is someone who manages to unite all the elements: the understanding of materials and the belief in increasing functionality. Then the reduction to the form, if you like, becomes the result of all these experiments ..</p>
+					<h2 class="title title__h2 title__section title_normal">Revolution </h2>
+					<p class="block-description">Most problems today seem scary. It may seem like the world is going to end soon. But actually many of these problems can be easily tackled – solutions for these exist! Its just that they may be unseen, unheard, unscaled or unfunded. Never in history has there been a time when it’s been so easy to find solutions to problems that plague us, its just that we have been blinded temporarily. How the road ahead will turn out depends greatly on the narratives we chose to apply – to understand today’s needs, to imagine tomorrow’s and to walk with a collective and responsible way forward. The next revolution won’t be one where we bring out the guns. The next revolution is one where we bring our ideas. </p>
 				<P><a class="btn hero__btn" href="#">Know more</a></P></div>
 			</div>
 			<div class="col-sm-auto col-lg-5 order-1 order-lg-2">
 				<div class="block-image _right">
 					<span class="block-image__number" data-top-bottom="transform:translate3d(0,50px,0)" data-bottom-top="transform:translate3d(0,0px,0)">02.</span>
-					<div class="reveal"><img src="img/image_history_02.jpg" alt="2016 Year"></div>
+					<div class="reveal"><img src="img/2018.jpg" alt="2016 Year"></div>
 					</div>
 			</div>
 		</div>
@@ -613,14 +650,35 @@
 			<div class="col-sm-auto col-lg-5">
 				<div class="block-image">
 					<span class="block-image__number" data-top-bottom="transform:translate3d(0,50px,0)" data-bottom-top="transform:translate3d(0,0px,0)">03.</span>
-					<div class="reveal"><img src="img/image_history_03.jpg" alt="2017 Year"></div>
+					<div class="reveal"><img src="img/gallery2.jpg" alt="2017 Year"></div>
 				</div>
 			</div>
 			<div class="col-12 col-lg-7">
 				<div class="col-about__describe col-about__describe_right">
 					<h6 class="title__h6 title__overhead">2019 year</h6>
-					<h2 class="title title__h2 title__section title_normal">Cooperation with world brands.</h2>
-					<p class="block-description">My work is simple and sophisticated, so it can be described in both simple and florid language. I love sophistication and I feel its superiority. I like people with a sophisticated mind and at the same time simple in communication. These qualities can be combined quite naturally. However, objects, like people, look pathetic if these properties are connected in them artificially.</p>
+					<h2 class="title title__h2 title__section title_normal">IF</h2>
+					<p class="block-description">
+
+Aren’t most discoveries and inventions made in the past decade, a by-
+product of the questions the inventor asked?
+
+Questions that left them wonderstruck - “Wow, that’s a really
+interesting point!”.
+Questions that piqued their curiosity
+Why did the apple fall on Earth? – Issac Newton
+What if we, as humans, could sustain an ecosystem in another
+planet? – Elon Musk
+What if there was an omni-purpose device to use anytime,
+anywhere, by anyone? – Steve Jobs
+Extending their thoughts and questions, if we are going to solve the
+problems of tomorrow, we need to be asking the right questions and
+challenging accepted notions today. We need to be curious to delve
+deeper into the possibilities and pitfalls of solutions to arrive at that one,
+new idea that could change everything. Our resolve at TEDxChennai is
+to question the status quo and leave no stone unturned in exploring the
+endless possibilities of life. We believe that the next big change will start
+with “What IF”.
+</p>
 					<P><a class="btn hero__btn" href="#">Know more</a></P></div>
 			</div>
 		</div>
@@ -665,25 +723,28 @@
 	 /Brands -->
 
 	<!-- Contact -->
-	<section class="section section-contact section-onescreen">
-	    <div class="container">	
-		    <div class="row">
-			    <div class="col-lg-12">
-				    <h2 class="title__section title__h1 title_horizontal-line"><span class="reveal reveal_gray">Let’s chat.</span></h2>
-			    </div>
-			</div>
-            <div class="row">
-			    <div class="col-lg-4">
-                    <p class="text-block">A photo — is a search for what can get into the frame. When you limit events to a frame — You change these events.</p>
-					<a id="open-popup" class="btn btn__contact" href="#">Leave a message</a>
+	<section class="section section-newsletter">
+	    <div class="container">
+		    <div class="row justify-content-center">
+			    <div class="col-12 col-lg-9 section__header-wrap">
+			      <h2 class="title title__h2 title_center title_normal"><span class="reveal reveal_gray">Sign up to get useful information.</h2>
+			      	<div class="pricing-options__name" style="text-align: center;">We promise, no spamming!</div></span>
 				</div>
-			   
 			</div>
-		
-		</div>
-		<div class="text-decoration text-decoration_bottom" data-100-start="transform[swing]:translateY(100px)" data--800-top="transform[swing]:translateY(-100px)">Contact</div>
+			
+			<div class="form-group">
+				<form class="subscribe-form" data-toggle="validator">
+				    <div class="subscribe-form__inner">
+					    <input type="email" class="form-control _big email_valid" placeholder="Enter your email address" required data-error="Please, enter your email.">
+					    <button type="submit" class="btn-subscribe">OK</button>
+					</div>
+					<div id="validator-subscribe" class="hidden"></div>
+				</form>
+			</div>
+		</div>	
 	</section>
-    <!-- /Contact -->
+	
+	<!-- /Contact -->
 	<footer class="footer">
 	    <div class="container">
 		    <div class="row">
