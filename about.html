@@ -1,8 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-<!-- Mirrored from netgon.net/artstyles/oliver/new/dark/about_onescreen.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Nov 2019 13:56:24 GMT -->
+		<script type="text/javascript">
+			window.onscroll=()=>{
+		  const nav = document.querySelector('#navmenu');
+		  if(this.scrollY <= 500)
+		   nav.style.backgroundColor = 'black';
+		   else nav.style.backgroundColor = 'Black';
+		};
+		</script>
 <head>
     <meta charset="utf-8" />
     <title>About | TEDxChennai</title>
@@ -36,14 +42,38 @@
 			</div>
 			
 			<!-- Header -->
-			<nav id=navmenu class="navbar navbar-expand-lg animated slideInDown" style="">
-				<div class="navbar-left">
-					<a href="index.html">
-						<img class="logotype" src="images/tedx-logo.png" alt="Tedxchennai">
-					</a>
-				</div>
 		
-	</nav>
+    <!-- Header -->
+	<nav id=navmenu class="navbar navbar-expand-lg animated slideInDown" style="">
+			<div class="navbar-left">
+				<a href="index.html">
+					<img class="logotype" src="images/tedx-logo.png" alt="Tedxchennai">
+				</a>
+			</div>
+			<div class="hamburger navbar-toggler" data-toggle="collapse" data-target="#navbarText" role="navigation" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="hamburger__line"></span>
+				<span class="hamburger__line"></span>
+				<span class="hamburger__line"></span>
+			<!--	<span class="hamburger__text">Menu</span>-->
+			</div>
+	
+			<div class="collapse navbar-collapse" id="navbarText">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a href="index.html">Home</a></li>
+					<li class="nav-item"><a href="#tedxchennai">TEDx Chennai</a></li>
+					<!--<li class="nav-item"><a href="#speaker">Speakers</a></li> -->
+					<li class="nav-item"><a href="#team">Team</a></li>
+					<li class="nav-item"><a href="#contact">Contact</a></li>
+					<!--<li class="nav-item dropdown">
+						<a class="dropdown-toggle link__last" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+						<ul class="dropdown-menu dropdown-menu--right" aria-labelledby="navbarDropdownMenuLink">
+							
+						</ul>
+					</li>-->
+				</ul>
+			</div>
+		</nav>
+	
 	<!-- /Header -->
 
 	<!-- About -->
@@ -52,26 +82,26 @@
 	    
 		    <!-- Post -->
 			<article class="item-news item-news__main">
-					<header class="item-news__header">
-					    <h2 class="title title__h1">TED</h2>
-						<h6 class="title__h6 title__overhead">INSPIRATION – 06 Jul 2017</h6>
-					</header>
-					
-					
+				
 					<div class="item-news__paragraph">
-					  	<p><span class="initial_letter">TED</span>
+					<div> 	<p> <span color="red" class="initial_letter">TED</span> </p>
 							 is a non-profit devoted to spreading ideas, usually in the form of short powerful talks.
 						TED stands for Technology, Entertainment and Design it covers almost all topics from science to business to global issues - in more than 100 languages
 					    TEDx brings the spirit of TED's mission of "Ideas Worth Spreading" to local communities around the globe. 
 							</p>
-							
-							<figure class="media-content">
-									<span class="reveal">
-										<img class="news-image" src="img/08_image.jpg" alt="News">
-									</span>
-								</figure>
-								<p> <span class="initial_letter">TEDx</span>events are organized by curious individuals who seek to discover ideas and spark conversations at the local level in their own community.
+							<footer class="item-news__footer">
+									<a class="btn" target="blank" href="https://www.ted.com/">Read More</a>
+								</footer>
+						<br>
+						<br></div>
+						<div>
+								<p> <span class="initial_letter">TEDx</span>is a grassroots initiative, created in the spirit of TED’s overall mission to research and discover “ideas worth spreading.” TEDx brings the spirit of TED to local communities around the globe via “rules and tools”. TEDx events are organized by passionate individuals who seek to uncover new ideas and the latest research in their local areas and spark conversations in their communities. 
 								</p>
+								<footer class="item-news__footer">
+										<a class="btn" target="blank"  href="https://www.tedx.com">Read More</a>
+									</footer>
+									<br>
+					</div>
 						<div class="post-gallery">
 						    <div class="post-gallery__item">
 						        <img class="image__news" src="img/image_history_03.jpg" data-zoomable alt="News">
@@ -83,265 +113,62 @@
 						        <img class="image__news" src="img/image_history_02.jpg" data-zoomable alt="News">
 						    </div>
 						</div>
-						
-					<footer class="item-news__footer">
-					        <div class="share-post">
-						        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i><span>Facebook</span></a>
-							    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
-							    <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i><span>YouTube</span></a>
-								
-						    </div>
-					    </footer>
 					</div>
 			</article>
 		
 </section>
 
 			<!-- /TEDxChennai-->
-			<section class="section section_top-space-230 section_first">
+			<section class="section news-singel section_first" id ="tedxchennai">
 				
 						<!-- /Filter -->
-						
+						<article class="item-news item-news__main">
+				
+								<div class="item-news__paragraph">
 						<!-- Main Post -->
 						<article class="item-news item-news__main">
 								<header class="item-news__header">
-									<h6 class="title__h6 title__overhead">INSPIRATION – 05 Jul 2017</h6>
+										<br>
+										<br>
+										<br>
 									<h2 class="title title__h1">TEDxChennai</h2>
 								</header>
-								<figure class="media-content">
-									<span class="reveal">
-										<img class="news-image" src="img/image_news_03.jpg" alt="News">
-									</span>
-								</figure>
+								
 								<div class="item-news__paragraph item-news__paragraph_line">
 									  <p>
 											Born from the cultural curiosity rooted in the city of Chennai, TEDxChennai is a heterogeneous amalgamation of souls who believe that all knowledge is connected. At TEDxChennai, our key resolve is to bring people together to seek a deeper understanding of ourselves and our world, and to inspire ideas and action for a
 											better future for us all. We connect people who value ideas and love creative
 											conversations. Above all, TEDxChennai is about passion, laughter, beauty, ingenuity, empathy,
-											conversation and ideas with the power of changing the world.</p>
-											
-											
-									<footer class="item-news__footer">
-										<a class="btn" href="blog_single_image.html">Read More</a>
-									</footer>
+											conversation and ideas with the power of changing the world.</p>		
 								</div>
+						<div class="post-gallery">
+								<div class="post-gallery__item">
+									<img class="image__news" src="img/image_history_03.jpg" data-zoomable alt="News">
+								</div>
+								<div class="post-gallery__item">
+									<img class="image__news" src="img/image_history_01.jpg" data-zoomable alt="News">
+								</div>
+								<div class="post-gallery__item">
+									<img class="image__news" src="img/image_history_02.jpg" data-zoomable alt="News">
+								</div>
+							</div>
+						
 						</article>
-						<!-- /Main Post -->
-						
-						<div class="grid-news">
-							<!-- Post Image -->
-								<article class="item-news item-news__masonry">
-									<figure class="media-content">
-										<img class="news-image" src="img/image_history_03.jpg" alt="News">
-									</figure>
-									<header class="item-news__header">
-										<h6 class="title__h6 title__overhead">INSPIRATION – 19 Jun 2017</h6>
-										<h2 class="title title__h6"><a href="blog_single_image.html">Photography — is meditation in the moment.</a></h2>
-									</header>
-									<footer class="item-news__footer">
-										<ul class="item-details">
-											<li><i class="fa fa-comment-o" aria-hidden="true"></i><span>5</span></li>
-											<li><i class="fa fa-heart-o" aria-hidden="true"></i><span>28</span></li>
-										</ul>
-									</footer>
-								</article>
-							<!-- /Post Image -->
-			
-							<!-- Post Quote -->
-								<article class="item-news item-news__masonry">
-									<blockquote class="block-quote block-quote_center">
-										<p>TEDxCHENNAI ACHIEVEMENT</p>
-									</blockquote>
-								</article>
-							<!-- /Post Quote -->
-			
-							<!-- Post Image -->
-								<article class="item-news item-news__masonry">
-									<figure class="media-content">
-										<img class="news-image" src="img/15_image.jpg" alt="News">
-									</figure>
-									<header class="item-news__header">
-										<h6 class="title__h6 title__overhead">Work – 18 Jun 2017</h6>
-										<h2 class="title title__h6"><a href="blog_single_video.html">Which lens is best for macro photography.</a></h2>
-									</header>
-									<footer class="item-news__footer">
-										<ul class="item-details">
-											<li><i class="fa fa-comment-o" aria-hidden="true"></i><span>7</span></li>
-											<li><i class="fa fa-heart" aria-hidden="true"></i><span>16</span></li>
-										</ul>
-									</footer>
-								</article>
-							<!-- /Post Image -->
-							
-							<!-- Post Image -->
-								<article class="item-news item-news__masonry">
-									<figure class="media-content">
-										<img class="news-image" src="img/07_image.jpg" alt="News">
-									</figure>
-									<header class="item-news__header">
-										<h6 class="title__h6 title__overhead">Events – 17 Jun 2017</h6>
-										<h2 class="title title__h6"><a href="blog_single_image.html">Amazing examples of live and contrast photos.</a></h2>
-									</header>
-									<footer class="item-news__footer">
-										<ul class="item-details">
-											<li><i class="fa fa-comment-o" aria-hidden="true"></i><span>0</span></li>
-											<li><i class="fa fa-heart" aria-hidden="true"></i><span>1</span></li>
-										</ul>
-									</footer>
-								</article>
-							<!-- /Post Image -->
-			
-							<!-- Post Image -->
-								<article class="item-news item-news__masonry item-news__masonry_fully">
-									<figure class="media-content">
-										<img class="news-image" src="img/14_image.jpg" alt="News">
-									</figure>
-									<header class="item-news__header">
-										<h6 class="title__h6 title__overhead">INSPIRATION – 15 Jun 2017</h6>
-										<h2 class="title title__h6"><a href="blog_single_video.html">A good photographer is someone who builds a frame better than others.</a></h2>
-									</header>
-									<footer class="item-news__footer">
-										<ul class="item-details">
-											<li><i class="fa fa-comment-o" aria-hidden="true"></i><span>0</span></li>
-											<li><i class="fa fa-heart" aria-hidden="true"></i><span>17</span></li>
-										</ul> 
-									</footer>
-								</article>
-							<!-- /Post Image -->
-							
-							<!-- Post Image -->
-								<article class="item-news item-news__masonry">
-									<figure class="media-content">
-										<img class="news-image" src="img/image_pricing_01.jpg" alt="News">
-									</figure>
-									<header class="item-news__header">
-										<h6 class="title__h6 title__overhead">Models – 16 Jun 2017</h6>
-										<h2 class="title title__h6"><a href="blog_single_image.html">All photos are an exact copy, but none of them is true.</a></h2>
-									</header>
-									<footer class="item-news__footer">
-										<ul class="item-details">
-											<li><i class="fa fa-comment-o" aria-hidden="true"></i><span>32</span></li>
-											<li><i class="fa fa-heart-o" aria-hidden="true"></i><span>128</span></li>
-										</ul>
-									</footer>
-								</article>
-							<!-- /Post Image -->
-							
-							<!-- Post Image -->
-								<article class="item-news item-news__masonry">
-									<figure class="media-content">
-										<img class="news-image" src="img/17_image.jpg" alt="News">
-									</figure>
-									<header class="item-news__header">
-										<h6 class="title__h6 title__overhead">Events – 14 Jun 2017</h6>
-										<h2 class="title title__h6"><a href="blog_single_video.html">A photograph — is an expression of an impression.</a></h2>
-									</header>
-									<footer class="item-news__footer">
-										<ul class="item-details">
-											<li><i class="fa fa-comment-o" aria-hidden="true"></i><span>18</span></li>
-											<li><i class="fa fa-heart-o" aria-hidden="true"></i><span>98</span></li>
-										</ul> 
-									</footer>
-								</article>
-							<!-- /Post Image -->
-			
-							<!-- Post Image -->
-								<article class="item-news item-news__masonry item-news__masonry_fully">
-									<figure class="media-content">
-										<img class="news-image" src="img/16_image.jpg" alt="News">
-									</figure>
-									<header class="item-news__header">
-										<h6 class="title__h6 title__overhead">Models – 15 Jun 2017</h6>
-										<h2 class="title title__h6"><a href="blog_single_image.html">An unusual approach as a way to achieve an interesting snapshot.</a></h2>
-									</header>
-									<footer class="item-news__footer">
-										<ul class="item-details">
-											<li><i class="fa fa-comment-o" aria-hidden="true"></i><span>232</span></li>
-											<li><i class="fa fa-heart" aria-hidden="true"></i><span>654</span></li>
-										</ul> 
-									</footer>
-								</article>
-							<!-- /Post Image -->	
-						
-							<!-- Post Image -->
-								<article class="item-news item-news__masonry">
-									<figure class="media-content">
-										<img class="news-image" src="img/18_image.jpg" alt="News">
-									</figure>
-									<header class="item-news__header">
-										<h6 class="title__h6 title__overhead">Models – 13 Jun 2017</h6>
-										<h2 class="title title__h6"><a href="blog_single_video.html">Street photosession in New York.</a></h2>
-									</header>
-									<footer class="item-news__footer">
-										<ul class="item-details">
-											<li><i class="fa fa-comment-o" aria-hidden="true"></i><span>12</span></li>
-											<li><i class="fa fa-heart" aria-hidden="true"></i><span>50</span></li>
-										</ul> 
-									</footer>
-								</article>
 							<!-- /Post Image -->
 						</div>
-
-						<section class="section section-counters text-center" id ="Statistics" >
-								<div class="container">
-									<div class="row os">
-											<div class="col-12 col-md-4">
-													<div class="counter">
-														<div class="counter title_decoration">3500+</div>
-														<div class="counter__name">Attendees</div>
-													</div>
-												</div>
-										<div class="col-12 col-md-4">
-											<div class="counter">
-												<div class="counter title_decoration">130+</div>
-												<div class="counter__name">Partners</div>
-											</div>
-										</div>
-										<div class="col-12 col-md-4">
-											<div class="counter">
-												<div class="counter title_decoration">50+</div>
-												<div class="counter__name">Ideas</div>
-											</div>
-										</div>
-										
-									</div>
-								</div>
-							</section>
-							<!-- /Statistics -->
-						
-						
-					
-					
-					</div>
-				</section>
-
-				<!-- /TEDxChennai -->
+						</article>
+			</section>
 			
-
-		
-	
-	<!-- team -->
-	<section class="section section_no-space-top">
+	<section class="section section_no-space-top" id="team">
 			<div class="container">
-
-
 					<div class="row">
+						<br>
+						<br>
 							<div class="col section__header-wrap">
 								<h2 class="title__section title__h1 title_horizontal-line"><span class="reveal reveal_gray">TEAM</span></h2>
 								</div>
 						</div>
-					<div class="row justify-content-center">
-							
-								<h2 class="title title__h2 title_center title_light title_vertical-line-bottom">
-										<blockquote class="block-quote block-quote_center" >
-												<h1> idea worth spreading</h1>
-											<p>“Treat people as if they were what they ought to be and you help them to become what they are capable of being.”
-											</p>
-											— <cite>JOHANN WOLFGANG VON GOETHE</cite>
-										</blockquote>
-								</h2>
-							
-						</div>
+					
 				<div class="row os">
 					<div class="col-md-6 col-lg-4">
 							<ul class="list-info list-unstyled">
@@ -399,64 +226,75 @@
 								</ul>
 							</div>
 				</div>
+				<div class="row justify-content-center">
+							
+						<h2 class="title title__h2 title_center title_light title_vertical-line-bottom">
+								<blockquote class="block-quote block-quote_center" >
+										<h1> An idea worth spreading</h1>
+									<p>“Treat people as if they were what they ought to be and you help them to become what they are capable of being.”
+									</p>
+									— <cite>JOHANN WOLFGANG VON GOETHE</cite>
+								</blockquote>
+						</h2>
+					
+				</div>
 			</div>
 		</section>
 		<!-- /Information -->
 
-			</div>
 	<!-- Contact -->
-	<section class="section section-contact section-onescreen">
+	<section class="section section-contact" id ="contact">
 			<div class="container">	
 				<div class="row">
 					<div class="col-lg-12">
-						<h2 class="title__section title__h1 title_horizontal-line"><span class="reveal reveal_gray">Let’s chat.</span></h2>
+						<h2 class="title__section title__h1 title_horizontal-line"><span class="reveal reveal_gray">Reach out to us.</span></h2>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-lg-4">
-						<p class="text-block">A photo — is a search for what can get into the frame. When you limit events to a frame — You change these events.</p>
+						<p class="text-block">"Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less." ― Marie Curie</p>
 						<a id="open-popup" class="btn btn__contact" href="#">Leave a message</a>
-
 					</div>
 					<br>
-					<br>
+						<br>
 					<span style="display:inline-block; width: 350px;"></span>
 				
 					<div class="right">
-						<a href="http://thepopcorn.tech/" target="_blank" rel=”noopener” rel=”noreferrer” class="opacity-10"><img style="height: 90px; width: 380px;"src="images/POP.png"></a>
-					   
-					 
+						<a href="http://thepopcorn.tech/" target="_blank" rel=”noopener” rel=”noreferrer” class="opacity-100"><img style="height: 60px; width: 290px;"src="images/POP.png"></a>
 			</div>
 				</div>
+			</div>
+			
 			</div>
 				</section>
 		
 		<!-- /Contact -->
+		
 		<footer class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-lg-4">
-						<h5 class="title title__h6 text_uppercase">Office</h5>
-						<ul class="footer__contacts list-unstyled">
-							<li>1st floor, New No.13, <br>Moores Garden Road, Nungambakkam, <br>Chennai, Tamil Nadu 600006</li>
-						</ul>
-					</div>
-					<div class="col-md-6 col-lg-4">
-						<h5 class="title title__h6 text_uppercase">Get in touch</h5>
-						<ul class="footer__contacts list-unstyled">
-							<li>E. : maz.tedxchennai@gmail.com</li>
-							<li>T. : +91-97118060</li>
-						</ul>
-					</div>
-					<div class="col-md-6 col-lg-4">
-						<h5 class="title title__h6 text_uppercase">Social</h5>
-						<ul class="footer__contacts list-unstyled">
-							<li>Connect us on <a class="link_decoration" target="blank" href="https://www.facebook.com/TEDxChennai/">facebook</a>,<br/><a class="link_decoration" target="blank" href="https://www.youtube.com/channel/UCubnIFff5t2ipKcV0gdKR6w">YouTube</a> or <a class="link_decoration" target="blank" href="https://www.instagram.com/tedxchennai/?hl=en">Instagrem</a></li>
-						</ul>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-lg-4">
+							<h5 class="title title__h6 text_uppercase">Office</h5>
+							<ul class="footer__contacts list-unstyled">
+								<li>1st floor, New No.13, <br>Moores Garden Road, Nungambakkam, <br>Chennai, Tamil Nadu 600006</li>
+							</ul>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<h5 class="title title__h6 text_uppercase">Contact</h5>
+							<ul class="footer__contacts list-unstyled">
+								<li>E. : maaz.tedxchennai@gmail.com</li>
+								<li>T. : +91-9711806060</li>
+							</ul>
+						</div>
+						<div class="col-md-6 col-lg-4">
+							<h5 class="title title__h6 text_uppercase">Social</h5>
+							<ul class="footer__contacts list-unstyled">
+								<li>Connect us on <a class="link_decoration" target="blank" href="https://www.facebook.com/TEDxChennai/">facebook</a>,<br/><a class="link_decoration" target="blank" href="https://www.youtube.com/channel/UCubnIFff5t2ipKcV0gdKR6w">YouTube</a> or <a class="link_decoration" target="blank" href="https://www.instagram.com/tedxchennai/?hl=en">Instagrem</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
-			</div>
-		</footer>
+			</footer>
 		
 	
 		<!-- PhotoSwipe -->
@@ -540,8 +378,15 @@
 								</div>
 								<div class="btn-block text-center">
 									<button type="submit" class="btn">Send Message</button>
+									<br>
+									<br>
+											<h3>We will reach to you soon </h3>
 									<div id="validator-contact" class="hidden"></div>
+									
+							
 								</div>
+								
+								
 							</div>
 						</div>
 					</div>
@@ -549,50 +394,6 @@
 			</div>
 		</div>
 		<!-- /Contact Form -->
-	<!-- Overlay Menu -->
-	<div class="popup popup__menu">
-	    <div class="popup-inner">
-            <div class="dl-menu__wrap dl-menuwrapper">
-                <ul class="dl-menu dl-menuopen">
-					<li>
-					    <a href="#">Home <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-					    <ul class="dl-submenu">
-						    <li><a href="index.html">Homepage v1</a></li>
-						    <li><a href="index_onescreen.html">Homepage v2</a></li>
-					    </ul>
-				    </li>
-				    <li><a href="about.html">About Me</a></li>
-					<li>
-					    <a href="#">Works <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-					    <ul class="dl-submenu">
-						    <li><a href="gallery.html">Gallery Fixed</a></li>
-						    <li><a href="gallery_fully.html">Gallery Fully</a></li>
-					    </ul>
-				    </li>
-					<li>
-					    <a href="#">Journal <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-					    <ul class="dl-submenu">
-						    <li><a href="blog.html">Journal</a></li>
-						    <li><a href="blog_single_image.html">Single Image</a></li>
-						    <li><a href="blog_single_video.html">Single Video</a></li>
-					    </ul>
-				    </li>
-				    <li><a href="contact.html">Contact</a></li>
-				    <li>
-					    <a href="#">More <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-					    <ul class="dl-submenu">
-						    <li><a href="about_onescreen.html">About Onescreen</a></li>
-							<li><a href="coming_soon.html">Coming Soon</a></li>
-						    <li><a href="page_error.html">Page Error</a></li>
-							<li><a href="page_error_v2.html">Page Error v2</a></li>
-						    <li><a href="nav_v2.html">Menu v2</a></li>
-					    </ul>
-				    </li>
-			    </ul>
-		    </div>
-	    </div>
-	</div>
-	<!-- /Overlay Menu -->
 	
 	<!-- JavaScripts -->
 	<script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
