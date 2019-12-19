@@ -25,23 +25,14 @@ function init() {
     // Create the Google Map using our element and options defined above
     var map = new google.maps.Map(mapElement, mapOptions);
 
-    // Let's also add a marker while we're at it
-    var image = {
-        url: 'http://netgon.net/artstyles/oliver/new/dark/images/icon-map-pic.svg',
-        scaledSize: new google.maps.Size(60, 60),
-    }
+    
 
-    var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(40.6700, -73.9400),
-        map: map,
-        optimized: false,
-        icon: image
-    });	
+    
 				
 	// Construct a new InfoWindow.
     var infoWindow = new google.maps.InfoWindow({
         content: 
-		'<h1 class="popover-map-title">e.Oliver</h1>'+
+		'<h1 class="popover-map-title">e.</h1>'+
 		'<div class="popover-map-caption">756 Livingston Street, Brooklyn, NY 11201</div>'
     });
 				

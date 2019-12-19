@@ -20,11 +20,7 @@
     <meta name="keywords" content="Designed by popcorn" />
     <meta name="description" content="" />
 
-	<!-- Favicons -->
-	<link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
+	
 	<link rel="shortcut icon" href="images/popx.png" type="image/png">
 
     <!-- Styles -->
@@ -90,7 +86,7 @@
 					    TEDx brings the spirit of TED's mission of "Ideas Worth Spreading" to local communities around the globe. 
 							</p>
 							<footer class="item-news__footer">
-									<a class="btn" target="blank" href="https://www.ted.com/">Read More</a>
+									<a class="btn" target="blank" rel=”noopener” rel=”noreferrer” rel=”noopener” rel=”noreferrer” href="https://www.ted.com/">Read More</a>
 								</footer>
 						<br>
 						<br></div>
@@ -98,7 +94,7 @@
 								<p> <span class="initial_letter">TEDx</span>is a grassroots initiative, created in the spirit of TED’s overall mission to research and discover “ideas worth spreading.” TEDx brings the spirit of TED to local communities around the globe via “rules and tools”. TEDx events are organized by passionate individuals who seek to uncover new ideas and the latest research in their local areas and spark conversations in their communities. 
 								</p>
 								<footer class="item-news__footer">
-										<a class="btn" target="blank"  href="https://www.tedx.com">Read More</a>
+										<a class="btn" target="blank" rel=”noopener” rel=”noreferrer” rel=”noopener” rel=”noreferrer” href="https://www.tedx.com">Read More</a>
 									</footer>
 									<br>
 					</div>
@@ -262,7 +258,7 @@
 					<div class="right">
 						<br>
 						<br>
-						<a href="http://thepopcorn.tech/" target="_blank" rel=”noopener” rel=”noreferrer” class="opacity-100"><img style="height: 60px; width: 290px;"src="images/POP.png"></a>
+						<a href="http://thepopcorn.tech/" target="_blank" rel=”noopener” rel=”noreferrer” class="opacity-100"><img style="height: 60px; width: 290px;"src="images/POP.png" alt="Thepopcorn"></a>
 			</div>
 				</div>
 			</div>
@@ -291,7 +287,7 @@
 						<div class="col-md-6 col-lg-4">
 							<h5 class="title title__h6 text_uppercase">Social</h5>
 							<ul class="footer__contacts list-unstyled">
-								<li>Connect us on <a class="link_decoration" target="blank" href="https://www.facebook.com/TEDxChennai/">facebook</a>,<br/><a class="link_decoration" target="blank" href="https://www.youtube.com/channel/UCubnIFff5t2ipKcV0gdKR6w">YouTube</a> or <a class="link_decoration" target="blank" href="https://www.instagram.com/tedxchennai/?hl=en">Instagrem</a></li>
+								<li>Connect us on <a class="link_decoration" target="blank" rel=”noopener” rel=”noreferrer” href="https://www.facebook.com/TEDxChennai/">facebook</a>,<br/><a class="link_decoration" target="blank" rel=”noopener” rel=”noreferrer” href="https://www.youtube.com/channel/UCubnIFff5t2ipKcV0gdKR6w">YouTube</a> or <a class="link_decoration" target="blank" rel=”noopener” rel=”noreferrer” href="https://www.instagram.com/tedxchennai/?hl=en">Instagrem</a></li>
 							</ul>
 						</div>
 					</div>
@@ -403,6 +399,51 @@
     <script src="js/common.js" type="text/javascript"></script>
 
 </body>
+<body oncontextmenu="return false;"></body>
+<!-- Share Window -->
+<script language="JavaScript">
+    
+    window.onload = function() {
+      document.addEventListener("contextmenu", function(e){
+        e.preventDefault();
+      }, false);
+      document.addEventListener("keydown", function(e) {
+      //document.onkeydown = function(e) {
+        // "I" key
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+          disabledEvent(e);
+        }
+        // "J" key
+        if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+          disabledEvent(e);
+        }
+        // "S" key + macOS
+        if (e.keyCode == 83 && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+          disabledEvent(e);
+        }
+        // "U" key
+        if (e.ctrlKey && e.keyCode == 85) {
+          disabledEvent(e);
+        }
+        // "F12" key
+        if (event.keyCode == 123) {
+          disabledEvent(e);
+        }
+      }, false);
+      function disabledEvent(e){
+        if (e.stopPropagation){
+          e.stopPropagation();
+        } else if (window.event){
+          window.event.cancelBubble = true;
+        }
+        e.preventDefault();
+        return false;
+      }
+    };
+  </script>
 
-<!-- Mirrored from netgon.net/artstyles/oliver/new/dark/about_onescreen.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 09 Nov 2019 13:56:24 GMT -->
+<!-- Loading Progress Bar -->
+
+
+</body>
 </html>
