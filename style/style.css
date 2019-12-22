@@ -3472,6 +3472,7 @@ img {
   margin-right: 0;
 }
 .item-news .initial_letter {
+  color: #e62b1e;
   font-size: 4rem;
   font-weight: 700;
   padding: 3px 16px 0 0;
