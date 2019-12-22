@@ -2407,6 +2407,7 @@ img {
 .counter_last-child {
   margin-bottom: 0;
 }
+
 .counter__date {
   font-family: "Poppins", sans-serif;
   font-size: 2.43rem;
@@ -2416,7 +2417,7 @@ img {
 }
 @media screen and (max-width: 580px) {
   .counter__date {
-    font-size: 1.43rem;
+    font-size: 2.43rem;
   }
 }
 .counter__name {
