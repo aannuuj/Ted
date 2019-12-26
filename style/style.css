@@ -695,7 +695,7 @@ h1, h2, h3, h4, h5, h6 {
 .block-quote {
   border: 0;
   font-family: "Poppins", sans-serif;
-  font-size: 1.286rem;
+  font-size: 1.5rem;
   font-style: italic;
   font-weight: 300;
 }
