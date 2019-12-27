@@ -96,7 +96,7 @@ body {
 input[type='text'], input[type='email'], input[type='password'], input[type='datetime'], input[type='date'], input[type='month'], input[type='time'], input[type='week'], input[type='search'], input[type='tel'], textarea,
 textarea.form-control {
   background-color: #111111;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   border-radius: 0;
   box-shadow: none;
   color: #fff;
@@ -4333,6 +4333,7 @@ footer{
 */
 .footer-distributed .footer-center{
   width: 33.33%;
+
 }
 
 .footer-distributed .footer-center i{
@@ -4374,6 +4375,7 @@ footer{
 
 .footer-distributed .footer-right{
   width: 33.33%;
+  float: right;
 }
 
 .footer-distributed .footer-company-about{
