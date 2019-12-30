@@ -7,13 +7,9 @@
 	window.onscroll=()=>{
   const nav = document.querySelector('#navmenu');
   if(this.scrollY <= 500)
-   nav.style.backgroundColor = 'transparent';
+   nav.style.backgroundColor = 'black';
    else nav.style.backgroundColor = 'Black';
 };
-
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-}
 </script>
 
 	<meta charset="utf-8" />
@@ -30,18 +26,16 @@ window.onbeforeunload = function () {
 
 	<!-- Favicons -->
 	
-	<link rel="shortcut icon" href="img/tabicon.png" type="image/png">
+	<link rel="shortcut icon" href="images/popx.png" type="image/png">
 
     <!-- Styles -->
 	<link rel="stylesheet" type="text/css" href="style/style.css"/>
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 	<!-- Modernizr -->
 	<script src="js/modernizr.custom.js" type="text/javascript"></script>
 	
 </head>
-<body >
+<body>
 	
     <div class="loading animated">
 	    <div class="loading-wrap animated bounceInLeft">
@@ -83,12 +77,12 @@ window.onbeforeunload = function () {
 	<!-- /Header -->
 
 	<section id="#">  <!-- Hero -->
-	<header class="hero jarallax" >
+	<header class="hero jarallax" data-video="video/ted1.mp4" >
 		
 	    <div class="container">
             <div class="hero__caption" data-start="opacity:1; transform[swing]:translateY(0px)" data-500-start="opacity:0; transform[swing]:translateY(-100px)">
 			    <div class="hero__row">
-		            
+		            <h6 class="title__h6 title" style="color:#e62b1e">TED<sup>x</sup><span style="color: white">Chennai</span></h6>
 			        <h2 class="title__h1 hero__title hero__title_line">Ideas Worth Spreading</h2>
 				    <p class="hero__description">
 							Imagine a day filled with brilliant speakers, thought-provoking videos and mind-blowing conversations. The next revolution won't be the one where we bring our guns, it will be the one where we bring our ideas.	</p>
@@ -134,9 +128,8 @@ window.onbeforeunload = function () {
 							<br></cite>
 						</p>
 					</blockquote> 
-						 <div style = "position:relative; left:100px;">
-						 <h6>— Kaniyan Poongundranaar, Purananooru - 192</h6>
-						</div>
+						<h6>— Kaniyan Poongundranaar, Purananooru - 192</h6>
+					
 				</div>
             </div>
 		</div>
@@ -203,19 +196,19 @@ window.onbeforeunload = function () {
 				<div class="row os">
 						<div class="col-12 col-md-4">
 								<div class="counter">
-									<div class="counter title_decoration" style="font-size:1.73rem; ">3500+</div>
+									<div class="counter__date title_decoration">3500&plus;</div>
 									<div class="counter__name">Attendees</div>
 								</div>
 							</div>
 					<div class="col-12 col-md-4">
 						<div class="counter">
-							<div class="counter title_decoration" style="font-size:1.73rem;">130+</div>
+							<div class="counter__date title_decoration">130&plus;</div>
 							<div class="counter__name">Partners</div>
 						</div>
 					</div>
 					<div class="col-12 col-md-4">
 						<div class="counter">
-							<div class="counter title_decoration" style="font-size:1.73rem; ">50+</div>
+							<div class="counter__date title_decoration">50&plus;</div>
 							<div class="counter__name">Ideas</div>
 						</div>
 					</div>
@@ -683,7 +676,7 @@ with “What IF”.
 	</section>
 
 	<!-- Contact -->
-<!--	<section class="section section-contact" id ="contact">
+	<section class="section section-contact" id ="contact">
 	    <div class="container">	
 		    <div class="row">
 
@@ -713,80 +706,9 @@ with “What IF”.
 		
 		</div>
 			</section>
-	-->
+	
 	<!-- /Contact -->
-	<br>
-	<br>
-<hr>
-<footer class="footer-distributed ">
-
-			<div class="footer-left">
-					<p class="footer-company-about">
-					<span>About Us</span>
-					TED is a nonpartisan nonprofit devoted to spreading ideas, usually in the form of short, powerful talk.Independently run TEDx events help share ideas in communities around the world. 	</p>
-			</div>
-
-			<div class="footer-center">
-
-				<div>
-					<i class="fa fa-map-marker"></i>
-					<p><span>1st floor, New No.13, <br>Moores Garden Road, Nungambakkam, <br>Chennai-06, Tamil Nadu</span></p>
-				</div>
-
-				<div>
-					<i class="fa fa-phone"></i>
-					<p><span>+91 9711806060</span></p>
-				</div>
-
-				<div>
-					<i class="fa fa-envelope"></i>
-					<p><span><a href="mailto:maaz.tedxchennai@gmail.com">maaz.tedxchennai@gmail.com</a></span></p>
-				</div>
-
-			</div>
-
-		<div class="footer-right">
-
-		<p><span>Leave us a message!</span></p>
-			<form id="contact-form" action="email.php" method="post" target="_blank" data-toggle="validator" style="align-self: right">
-			    <div class="container container_md">
-			        <div class="row">
-				        
-                            <div class="form-group">
-						        <label for="email" id="email55" class="label">Email *</label>
-                                <input type="email" class="form-control input" id="email" required data-error="Please, enter your email." autocomplete="off">
-						    </div>
-				        
-					</div>					        
-                    <div class="row">
-				        
-					        <div class="form-group">
-						        <label for="message"  id="message"class="label">Your Message ... *</label>
-						        <textarea class="form-control input" id="message" rows="2" required data-error="Please, enter message."></textarea>
-						    </div>
-					        <div class="btn-block text-center">
-								<button type="submit" class="btn">Send Message</button>
-								<br>
-								<br>
-							</div>
-						
-					</div>
-				</div>
-			</form>
-		</div>
-
-				<div class="w3-container w3-padding-64 w3-center w3-opacity w3-xxlarge">
-<a href="https://www.facebook.com/TEDxChennai/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
- <a href="https://www.instagram.com/tedxchennai/?hl=en"> <i class="fa fa-instagram w3-hover-opacity"></i></a>
- <a href="">  <i class="fa fa-twitter w3-hover-opacity"></i></a>
-  <a href="https://www.linkedin.com/company/tedxchennai/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-					
-
-				</div>
-
-		</footer>
-
-	<!-- <section class="section section-contact" >
+	<section class="section section-contact" >
 	<footer class="footer">
 			<div class="container">
 				<div class="row">
@@ -814,8 +736,6 @@ with “What IF”.
 		</footer>
 	
 	</section>
-
--->
     <!-- PhotoSwipe -->
     <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="pswp__bg"></div>
