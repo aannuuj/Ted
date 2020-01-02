@@ -25,7 +25,9 @@
     <meta name="description" content="" />
 
 	<!-- Favicons -->
-	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 	<link rel="shortcut icon" href="images/popx.png" type="image/png">
 
     <!-- Styles -->
@@ -76,9 +78,14 @@
 
 	<!-- /Header -->
 
-	<section id="#">  <!-- Hero -->
-	<header class="hero jarallax" data-video="video/ted1.mp4" >
-		
+	<section id="home">  <!-- Hero -->
+
+	<header class="hero jarallax" data-video="images/TEDx.gif" >
+		<div  style=" height: 100%;
+
+		background-position: center;
+	
+		background-size: cover; background-image: url('images/TEDx.gif');">
 	    <div class="container">
             <div class="hero__caption" data-start="opacity:1; transform[swing]:translateY(0px)" data-500-start="opacity:0; transform[swing]:translateY(-100px)">
 			    <div class="hero__row">
@@ -101,10 +108,10 @@
 	<br>
 	<br>
 		<div class="hero__social animated slideInUp">
-			
-		    <a class="link_decoration" target=_blank rel=”noopener” rel=”noreferrer” href="https://www.facebook.com/TEDxChennai/">Facebook</a>
-			<a class="link_decoration" target=_blank rel=”noopener” rel=”noreferrer” href="https://www.youtube.com/channel/UCubnIFff5t2ipKcV0gdKR6w">YouTube</a>
-			<a class="link_decoration" target=_blank rel=”noopener” rel=”noreferrer” href="https://www.instagram.com/tedxchennai/?hl=en">Instagram</a>
+		
+		    <a  class="fa fa-facebook"  style="font-size:36px" target=_blank rel=”noopener” rel=”noreferrer” href="https://www.facebook.com/TEDxChennai/"></a>
+			<a  class="fa fa-youtube"   style="font-size:36px" target=_blank rel=”noopener” rel=”noreferrer” href="https://www.youtube.com/channel/UCubnIFff5t2ipKcV0gdKR6w"></a>
+			<a  class="fa fa-instagram"  style="font-size:36px"target=_blank  href="https://www.instagram.com/tedxchennai/?hl=en"></a>
 		</div>
 	
     </header>	
@@ -135,6 +142,25 @@
 		</div>
 		<div class="text-decoration" data-100-start="transform[swing]:translateY(100px)" data--800-top="transform[swing]:translateY(-100px)">Theme</div>
 	</section>
+
+
+	<section class="section news-singel section_first">
+	    <div class="container">
+		    <!-- Post -->
+			<article class="item-news item-news__main">
+					
+					<figure class="media-content media-content__video">
+					    <span class="reveal">
+							<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/u5F2m__LKxo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</span>
+				    </figure>
+					
+					
+					</div>
+			</article>
+		</div>
+	</section>
+    <!-- /Blog -->
 	<!-- 
 
 	<section class="section section-onescreen section-oneCarousel">
@@ -702,15 +728,46 @@ with “What IF”.
 					<a href="https://thepopcorn.tech/" target="blank" rel=”noopener” rel=”noreferrer” class="opacity-100"><img style="height: 68.0px; width: 290px;"src="images/POP.png" alt="Thepopcorn"> </a>
 		</div>
 			</div>
+<br>
+<br>
+
+			<form class="comment-form">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="name" class="label">Name *</label>
+							<input type="text" class="form-control input" id="name" required autocomplete="off">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label for="email" class="label">Email *</label>
+							<input type="email" class="form-control input" id="email" required autocomplete="off">
+							<span></span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="form-group">
+							<label for="message" class="label">Message *</label>
+							<textarea class="form-control input" id="message" rows="3" required></textarea>
+						</div>
+						<div class="btn-block">
+							<button type="submit" class="btn">Send Message</button>
+						</div>
+					</div>
+				</div>
+			</form>
 		</div>
 		
-		</div>
+		
 			</section>
 	
 	<!-- /Contact -->
-	<section class="section section-contact" >
+	
 	<footer class="footer">
-			<div class="container">
+			<div class="container  col-lg-7.5">
 				<div class="row">
 					<div class="col-md-6 col-lg-4">
 						<h5 class="title title__h6 text_uppercase">Office</h5>
@@ -721,21 +778,25 @@ with “What IF”.
 					<div class="col-md-6 col-lg-4">
 						<h5 class="title title__h6 text_uppercase">Contact</h5>
 						<ul class="footer__contacts list-unstyled">
-							<li><a href="mailto: maaz.tedxchennai@gmail.com">E. : maaz.tedxchennai@gmail.com</a></li>
-							<li><a href="tel:+91-9711806060">T. : +91-9711806060</a></li>
+							<li><a style="text-decoration: none;" href="mailto: maaz.tedxchennai@gmail.com">E. : maaz.tedxchennai@gmail.com</a></li>
+							<li><a style="text-decoration: none;" href="tel:+91-9711806060">T. : +91-9711806060</a></li>
 						</ul>
 					</div>
 					<div class="col-md-6 col-lg-4">
 						<h5 class="title title__h6 text_uppercase">Social</h5>
 						<ul class="footer__contacts list-unstyled">
-							<li>Connect with us on <a class="link_decoration" target="blank" rel=”noopener” rel=”noreferrer” href="https://www.facebook.com/TEDxChennai/">facebook</a>,<br/><a class="link_decoration" target="blank" rel=”noopener” rel=”noreferrer” href="https://www.youtube.com/channel/UCubnIFff5t2ipKcV0gdKR6w">YouTube</a> or <a class="link_decoration" target="blank" rel=”noopener” rel=”noreferrer” href="https://www.instagram.com/tedxchennai/?hl=en">Instagram</a></li>
+							Connect with us on  
+							<li><a  class="fa fa-facebook" style="font-size:36px" style="text-decoration: none;"  target=_blank rel=”noopener”  rel=”noreferrer” href="https://www.facebook.com/TEDxChennai/"></a>  
+								<span style="display:inline-block; width: 10px;"> </span><a class="fa fa-youtube" style="font-size:36px" style="text-decoration: none;" target=_blank rel=”noopener” rel=”noreferrer” href="https://www.youtube.com/channel/UCubnIFff5t2ipKcV0gdKR6w"></a>
+								<span style="display:inline-block; width: 10px;"></span><a  class="fa fa-instagram" style="font-size:36px" style="text-decoration: none;" target=_blank  href="https://www.instagram.com/tedxchennai/?hl=en"></a>
+						
 						</ul>
 					</div>
 				</div>
 			</div>
 		</footer>
 	
-	</section>
+
     <!-- PhotoSwipe -->
     <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="pswp__bg"></div>
