@@ -336,7 +336,7 @@ $(document).ready(function() {
 	$('.load-container').each(function() {
 		var $loadContent = $('.load-container');
 		 
-        var initShow = 8; //number of items loaded on init & onclick load more button
+        var initShow = 16; //number of items loaded on init & onclick load more button
         var counter = initShow;
         var iso = $loadContent.data('isotope');
 

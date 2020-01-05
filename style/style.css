@@ -721,8 +721,8 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   text-align: center;
 }
-.block-quote_center::before {
-  background-image: url(../images/icon-quote.svg);
+.bloc-quote_center::before {
+  background-image: ;
   background-repeat: no-repeat;
   background-position: center;
   content: '';
@@ -734,6 +734,20 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   width: 60px;
 }
+.bloc-quote_center::before {
+  background-image: 
+  background-repeat: no-repeat;
+  background-position: center;
+  content: '';
+  height: 52px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 60px;
+}
+
 @media only screen and (max-width: 580px) {
   .block-quote_center {
     font-size: 1.3rem;
@@ -2398,9 +2412,9 @@ img {
   margin-bottom: 0;
 }
 
-.counter__date {
+.counter {
   font-family: "Poppins", sans-serif;
-  font-size: 2.43rem;
+  font-size: 2.1rem;
   letter-spacing: .2rem;
   line-height: 1.4;
   margin-bottom: 10px;
@@ -4261,18 +4275,28 @@ img {
 /* -----------------------------------------------------------------
     - Footer
 ----------------------------------------------------------------- */
-.footer {
+.footer{
   padding: 100px 0 40px;
   position: relative;
 }
+.footer {
+  color: #fff;
+  padding-left: 250px;
+ 
+  font-size: 14px;
+  
+  vertical-align: bottom
+}
 @media only screen and (max-width: 768px) {
   .footer {
-    padding: 40px 0 40px;
+    padding: 70px 0 40px;
+    
   }
 }
 @media only screen and (max-width: 580px) {
   .footer {
-    padding: 30px 0 0px;
+    padding: 30px 0 20px;
+    padding-left: 20px
   }
 }
 .footer-fluid {
