@@ -2396,7 +2396,7 @@ img {
 
 .counter {
   font-family: "Poppins", sans-serif;
-  font-size: 2.1rem;
+  font-size: 1.9rem;
   letter-spacing: .2rem;
   line-height: 1.4;
   margin-bottom: 10px;
@@ -4264,8 +4264,8 @@ img {
 .footer {
   color: #fff;
   padding-left: 250px;
- 
-  font-size: 14px;
+  
+  font-size: 16px;
   
   vertical-align: bottom
 }
@@ -4710,5 +4710,10 @@ img {
 .js-block {
   overflow: hidden;
 }
-
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 /*# sourceMappingURL=style.css.map */
