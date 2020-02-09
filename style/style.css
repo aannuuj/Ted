@@ -289,7 +289,7 @@ input:-webkit-autofill:active {
 }
 .btn::before {
   background-color: #e62b1e;
-  width: 60%;
+  width: 140%;
 }
 .btn::after {
   background-color: #1a1a1a;
@@ -303,7 +303,7 @@ input:-webkit-autofill:active {
 .btn:hover::before, .btn:focus::before {
   left: 0;
   opacity: 0;
-  width: 100%;
+  width: 80%;
 }
 .btn:hover::after, .btn:focus::after {
   width: 100%;
@@ -1562,12 +1562,12 @@ img {
 }
 @media only screen and (min-width: 1300px) {
   .hero__description {
-    width: 50%;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 1300px) {
   .hero__description {
-    width: 50%;
+    width: 100%;
   }
 }
 @media only screen and (max-width: 990px) {
@@ -1835,18 +1835,18 @@ img {
 .section-oneCarousel {
   padding-top: 10vh;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 795px) {
   .section-oneCarousel {
     padding-top: 0;
     padding-bottom: 0;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 795px) {
   .section-oneCarousel .footer {
     display: none;
   }
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 795px) {
   .section-oneCarousel .swiper-control {
     padding: 0 30px;
     position: fixed;
