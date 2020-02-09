@@ -1835,18 +1835,18 @@ img {
 .section-oneCarousel {
   padding-top: 10vh;
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 800px) {
   .section-oneCarousel {
     padding-top: 0;
     padding-bottom: 0;
   }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 800px) {
   .section-oneCarousel .footer {
     display: none;
   }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 800px) {
   .section-oneCarousel .swiper-control {
     padding: 0 30px;
     position: fixed;
@@ -1911,7 +1911,7 @@ img {
   align-content: center;
   justify-content: center;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 750px) {
   .section .row-flex {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
