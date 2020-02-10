@@ -354,14 +354,14 @@ $(document).ready(function() {
 
             //when no more to load, hide show more button
             if (hiddenElems.length == 0) {
-                jQuery(".btn-load__wrap").hide();
+                jQuery(".btn2-load__wrap").hide();
             } else {
-               jQuery(".btn-load__wrap").show();
+               jQuery(".btn2-load__wrap").show();
             };
         }
 
         //when load more button clicked
-        $(".btn-load__wrap").click(function() {
+        $(".btn2-load__wrap").click(function() {
             counter = counter + initShow;
             loadMore(counter);
         });
