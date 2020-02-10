@@ -1790,25 +1790,27 @@ img {
 }
 .hero__social {
   position: absolute;
-  right: 110px;
+  right: 130px;
   bottom: 40px;
 }
 @media only screen and (max-width: 768px) {
   .hero__social {
     right: 30px;
+    margin-left: 10px;
   }
 }
 @media only screen and (max-width: 580px) {
   .hero__social {
     margin-top: 50px;
-    position: relative;
+    position: relative
     right: auto;
-    left: 10;
+    left: 20;
     bottom: 10px;
   }
 }
 .hero__social a {
   margin-left: 20px;
+  margin-right: 0px;
 }
 .hero .next {
   background-image: url(../images/next.svg);
@@ -3991,7 +3993,7 @@ img {
     position: relative;
   }
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 768px) {
   .filter-categories {
     margin-left: 0;
     text-align: center;
@@ -4379,7 +4381,7 @@ img {
   width: 500px;
   z-index: 2;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 768px) {
   .mask-404 {
     height: 189px;
     width: 500px;
@@ -4430,7 +4432,7 @@ img {
   width: 500px;
   z-index: 1;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 760px) {
   .element-404 {
     height: 189px;
     width: 500px;
@@ -4493,7 +4495,7 @@ img {
   padding-right: 60px;
   width: 100%;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 760) {
   .footer-fluid {
     margin-top: 60px;
   }
@@ -4871,56 +4873,3 @@ img {
     opacity: 1 !important;
   }
 }
-/* Wave */
-#wave {
-  height: 100px;
-  margin: auto;
-  opacity: .08;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  transform: rotate(90deg);
-  width: 100%;
-  z-index: -1;
-}
-@media only screen and (max-width: 580px) {
-  #wave {
-    display: none;
-  }
-}
-
-.medium-zoom-overlay {
-  background: #111111 !important;
-  z-index: 9999;
-}
-
-.medium-zoom-image {
-  z-index: 9999;
-}
-
-.jarallax {
-  position: relative;
-  z-index: 0;
-}
-
-.jarallax > .jarallax-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
-.js-lines,
-.js-single-line,
-.js-block {
-  overflow: hidden;
-}
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-/*# sourceMappingURL=style.css.map */
