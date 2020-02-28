@@ -1242,6 +1242,11 @@ img {
   color: #fff
   animation: grow 60s linear .5s infinite;
   opacity: 1;
+  width: 110%;
+  font-weight: 400;
+  letter-spacing: .12rem;
+  margin: 0;
+  padding: 8px;
 
 }
 
@@ -2605,9 +2610,9 @@ img {
 
 .counter {
   font-family: "Poppins", sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   letter-spacing: .2rem;
-  line-height: 1.4;
+  line-height: 1;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 580px) {
@@ -2617,7 +2622,7 @@ img {
 }
 .counter__name {
   letter-spacing: .3rem;
-  text-transform: uppercase;
+  
 }
 
 /* -----------------------------------------------------------------
@@ -2809,7 +2814,7 @@ img {
 .client-carousel-item .item__block-number::after {
   background-color: #e62b1e;
   content: '';
-  height: 28%;
+  height: 10%;
   position: absolute;
   left: -60%;
   bottom: 25%;
